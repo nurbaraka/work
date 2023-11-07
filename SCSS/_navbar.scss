@@ -5,7 +5,7 @@
         .nav-link {
             color: #fff;
             &:hover {
-                color: $primary;
+                color: $secondary;
             }
         }
     }
@@ -16,7 +16,7 @@
     // background-color: $dark;
     background-color: $light;
     width: 28px;
-    height: 4px;
+    height: 2px;
     // border-radius: 3px;
     transition: margin 0.25s 0.25s, transform 0.25s;
 }
@@ -35,7 +35,7 @@
 
 .navbar-toggler.active span:first-child {
     margin-top: 8px;
-    margin-bottom: -4px;
+    margin-bottom: 2px;
     transform: rotate(45deg);
 }
 
