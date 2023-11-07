@@ -1,0 +1,27 @@
+.hover__filter--grayscale{
+    filter: grayscale(100%);
+    transition: all 0.3s;
+    &:hover{
+        filter: none;
+    }
+}
+
+a.hover__text--primary {
+    color: $light;
+    &:hover {
+        color: $primary;
+    }
+}
+a.hover__text--secondary {
+    color: $light;
+    &:hover {
+        color: $secondary;
+    }
+}
+
+a.hover__text--underline{
+    text-decoration: underline;
+    &:hover{
+        text-decoration: underline;
+    }
+}

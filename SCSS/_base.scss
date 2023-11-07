@@ -1,0 +1,67 @@
+// *{
+//     outline: 1px solid pink;
+// }
+body {
+    overflow-x: hidden;
+    & ::selection{
+        background-color: $secondary;
+    }
+}
+
+a{
+    transition: all 0.3s;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.right-0 {
+    right: 0;
+}
+
+.left-0 {
+    left: 0;
+}
+
+.font-jp {
+    font-family: "Noto Sans JP";
+}
+
+.text-underline{
+    text-decoration: underline;
+}
+.box {
+    margin-bottom: 3rem;
+    &__category {
+        color: $gray-500;
+    }
+    &__title {
+        font-size: 1.5rem;
+    }
+    &__text {
+        margin-bottom: 0.25rem;
+    }
+    &__img {
+        &__carousel {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            &::before {
+                content: "";
+                display: block;
+                padding-bottom: calc(100% - calc(330 / 980 * 100%));
+            }
+        }
+    }
+    &__link {
+        font-size: 2.5rem;
+        // color: $dark;
+        color: $light;
+        font-family: "Times New Rome";
+        font-weight: 300;
+        &:hover {
+            color: $white;
+            font-style: italic;
+        }
+    }
+}

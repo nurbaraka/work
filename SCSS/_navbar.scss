@@ -1,0 +1,48 @@
+.navbar {
+    z-index: 999;
+    backdrop-filter: blur(72px);
+    .nav-item {
+        .nav-link {
+            color: #fff;
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+}
+
+.navbar-toggler span {
+    display: block;
+    // background-color: $dark;
+    background-color: $light;
+    width: 28px;
+    height: 4px;
+    // border-radius: 3px;
+    transition: margin 0.25s 0.25s, transform 0.25s;
+}
+
+.navbar-toggler span:first-child {
+    margin-bottom: 4px;
+}
+
+.navbar-toggler span:last-child {
+    margin-top: 4px;
+}
+
+.navbar-toggler.active span {
+    transition: margin 0.25s, transform 0.25s 0.25s;
+}
+
+.navbar-toggler.active span:first-child {
+    margin-top: 8px;
+    margin-bottom: -4px;
+    transform: rotate(45deg);
+}
+
+// .navbar-toggler.active span:nth-child(2) {
+//     transform: rotate(45deg);
+// }
+.navbar-toggler.active span:last-child {
+    margin-top: -4px;
+    transform: rotate(135deg);
+}
